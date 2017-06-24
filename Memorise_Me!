@@ -1,0 +1,32 @@
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+int main()
+{
+    ios::sync_with_stdio(0);
+    int n,x;
+    vector<int> v(1001);
+    cin>>n;
+    
+    for(int i=0;i<n;i++)
+    {
+        cin>>x;
+        ++v[x];
+    }
+    int q,y;
+    cin>>q;
+    //cout<<q<<"#"<<endl;
+    while(q--)
+    {
+        cin>>y;
+      //  cout<<y<<endl;
+        if(v[y])
+            cout<<v[y]<<endl;
+        else
+            cout<<"NOT PRESENT"<<endl;
+    }
+    
+    return 0;
+}
