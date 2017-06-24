@@ -17,11 +17,9 @@ int main()
     }
     int q,y;
     cin>>q;
-    //cout<<q<<"#"<<endl;
     while(q--)
     {
         cin>>y;
-      //  cout<<y<<endl;
         if(v[y])
             cout<<v[y]<<endl;
         else
