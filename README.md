@@ -1,5 +1,5 @@
 # hackerearth_solutions
 
-#solutions to each problem alongwith the problem names!
+#solutions to each problem in c++, along with the problem names!
 
 Enjoy!
