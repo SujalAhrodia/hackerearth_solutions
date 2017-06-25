@@ -1,0 +1,25 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    int a[100000],b[100000],n;
+    cin>>n;
+    
+    for(int i=0;i<n;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    
+    for(int i=0;i<n;i++)
+    {
+        scanf("%d",&b[i]);
+    }
+    
+    for(int i=0;i<n;i++)
+    {
+        printf("%d ",a[i]+b[i]);
+    }
+    //cout << "Hello World!" << endl;
+    return 0;
+}
