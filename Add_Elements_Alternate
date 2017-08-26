@@ -1,0 +1,42 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    //cout << "Hello World!" << endl;
+    int a[3][3],n=3,sum1=0,sum2=0;
+    
+    for(int i=0;i<n;i++)
+    {
+        for(int j=0;j<n;j++)
+        {
+            cin>>a[i][j];        
+        }
+    }
+    
+    for(int i=0;i<n;i++)
+    {
+        for(int j=0;j<n;j++)
+        {
+            if((i==j) || (i+j==n-1))       
+                sum1+=a[i][j];
+            else
+                sum2+=a[i][j];
+        }
+    }
+    /*
+    //Alternate Solution
+    int i=0;
+    while(i<9)
+    {
+        cin>>b;
+        if(i%2==0)
+            sum1+=b;
+        else
+            sum2+=b;
+        i++;
+    }*/
+    
+    cout<<sum1<<endl<<sum2;
+    return 0;
+}
